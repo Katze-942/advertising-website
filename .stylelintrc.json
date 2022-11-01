@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-html"
+  ],
+  "rules": {
+    "no-descending-specificity": null
+  }
+}
