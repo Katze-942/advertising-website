@@ -6,7 +6,7 @@
   "author": "Жора Змейкин",
   "license": "MIT",
   "scripts": {
-    "stylelint": "stylelint \"**/*.css\""
+    "stylelint": "stylelint \"*.css\""
   },
   "dependencies": {
     "stylelint": "^14.14.0",
