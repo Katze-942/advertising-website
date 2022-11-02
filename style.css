@@ -1,6 +1,7 @@
 body {
   background-color: black;
   margin: 0;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -25,13 +26,13 @@ header {
   color: white;
   width: 100vw;
   height: 8vh;
-  z-index: 1;
+  z-index: 5;
 }
 
 header #logo {
   display: flex;
   align-items: center;
-  margin-left: 0.8vw;
+  margin-left: 2vw;
   font-family: FjallaOne, sans-serif;
   font-size: 1.2vw;
   letter-spacing: 0.4px;
@@ -56,7 +57,7 @@ header #logo:hover {
 .buttons {
   display: flex;
   align-items: center;
-  margin-right: 0.8vw;
+  margin-right: 2vw;
 }
 
 .button {
@@ -65,9 +66,16 @@ header #logo:hover {
   border-radius: 8px;
   font-size: 1.2vw;
   padding: 0.5vw;
-  transition: 0.5s;
   color: white;
   margin: 0;
+  transition: 0.5s;
+}
+
+.buttons h2 {
+  font-family: FjallaOne, sans-serif;
+  letter-spacing: 1.5px;
+  margin-right: 1vw;
+  font-size: 1.5vw;
 }
 
 .button:hover {
@@ -79,9 +87,21 @@ header #logo:hover {
   background-image: url("./img/cleaning.jpeg");
   background-size: cover;
   filter: blur(5px) brightness(50%);
-  position: fixed;
+  position: absolute;
   height: 100vh;
   width: 100vw;
+  z-index: 0;
+}
+
+.background-image.block2 {
+  background-image: url("./img/background.jpg");
+  background-size: cover;
+  filter: blur(5px) brightness(120%);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  margin-top: 100vh;
   z-index: 0;
 }
 
@@ -89,9 +109,10 @@ header #logo:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
   flex-wrap: wrap;
   color: rgb(233 214 214);
+  width: 100vw;
   height: 100vh;
   margin: 0;
 }
@@ -114,4 +135,67 @@ header #logo:hover {
 
 #information img {
   width: 25%;
+}
+
+#request {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-wrap: wrap;
+  color: rgb(233 214 214);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  margin-top: 100vh;
+  z-index: 1;
+}
+
+#request-block {
+  width: 50vw;
+  height: 65vh;
+  border: 1vw solid black;
+  background-color: rgba(77 77 77 / 70%);
+}
+
+#request-block h1 {
+  text-align: center;
+  font-size: 3vw;
+  font-family: FjallaOne, sans-serif;
+  letter-spacing: 3px;
+  color: white;
+  margin-bottom: 4vh;
+}
+
+#request-block section {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  font-size: 1.3vw;
+  background-color: rgb(255 255 255);
+  color: black;
+  width: 30vw;
+  height: 5vh;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.send-button {
+  background-color: rgb(56 41 41);
+  text-decoration: none;
+  border-radius: 25px;
+  text-align: center;
+  color: white;
+  padding: 1vw;
+  width: 15vw;
+  margin-top: 0.1vw;
+  transition: 0.2s;
+}
+
+.send-button:hover {
+  background-color: rgb(124 93 93);
+  width: 17vw;
 }

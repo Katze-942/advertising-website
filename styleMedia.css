@@ -1,0 +1,9 @@
+@media (max-width: 50px) {
+  header {
+    height: 10vh;
+  }
+
+  header #logo img {
+    width: 10vw;
+  }
+}
