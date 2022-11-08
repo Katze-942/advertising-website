@@ -83,26 +83,32 @@ header #logo:hover {
   text-decoration: underline;
 }
 
-.background-image.block1 {
-  background-image: url("./img/cleaning.jpeg");
+.background-image {
   background-size: cover;
-  filter: blur(5px) brightness(50%);
   position: absolute;
   height: 100vh;
   width: 100vw;
   z-index: 0;
 }
 
+.background-image.block1 {
+  background-image: url("./img/cleaning.jpeg");
+  filter: blur(5px) brightness(50%);
+}
+
 .background-image.block2 {
-  background-image: url("./img/background.jpg");
-  background-size: cover;
+  background-color: aliceblue;
   filter: blur(5px) brightness(120%);
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
   margin: 0;
   margin-top: 100vh;
-  z-index: 0;
+  height: 50vh;
+}
+
+.background-image.block3 {
+  background-image: url("./img/background.jpg");
+  filter: blur(5px) brightness(120%);
+  margin: 0;
+  margin-top: 150vh;
 }
 
 #information {
@@ -118,16 +124,15 @@ header #logo:hover {
 }
 
 #information h2 {
-  font-family: GloriaHallelujah, sans-serif;
-  transform: rotate(-5deg);
-  text-align: center;
+  font-family: FjallaOne, sans-serif;
+  text-align: end;
   font-size: 5vw;
   margin: 0;
+  margin-bottom: 1vh;
 }
 
 #information h3 {
-  font-family: GloriaHallelujah, sans-serif;
-  transform: rotate(-5deg);
+  font-family: FjallaOne, sans-serif;
   text-align: end;
   font-size: 1.4vw;
   margin: 0;
@@ -147,7 +152,7 @@ header #logo:hover {
   width: 100vw;
   height: 100vh;
   margin: 0;
-  margin-top: 100vh;
+  margin-top: 150vh;
   z-index: 1;
 }
 
@@ -198,4 +203,33 @@ input {
 .send-button:hover {
   background-color: rgb(124 93 93);
   width: 17vw;
+}
+
+#advantages {
+  position: absolute;
+  color: black;
+  margin: 0;
+  margin-top: 100vh;
+  width: 100vw;
+}
+
+#advantages h1 {
+  text-align: center;
+  font-size: 4vw;
+  font-family: FjallaOne, sans-serif;
+  margin: 0;
+  margin-top: 5vh;
+}
+
+#enumeration {
+  width: 80vw;
+  margin-left: 10vw;
+}
+
+#enumeration h2 {
+  color: dimgray;
+  font-size: 2.3vw;
+  font-family: FjallaOne, sans-serif;
+  margin: 0;
+  margin-top: 2vh;
 }
